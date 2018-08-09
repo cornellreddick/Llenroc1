@@ -1,6 +1,6 @@
 ﻿namespace Llenroc1
 {
-    partial class Form1
+    partial class Llenroc
     {
         /// <summary>
         /// Required designer variable.
