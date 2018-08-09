@@ -46,7 +46,7 @@ namespace Llenroc1
         }
         private void VoiceRecognition_VoiceRecognized(object sender, SpeechRecognizedEventArgs e)
         {
-            
+            questionBox.Text = e.Result.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
