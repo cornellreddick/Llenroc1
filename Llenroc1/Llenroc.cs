@@ -37,7 +37,7 @@ namespace Llenroc1
         private void LoadGrammar()
         {
             Choices texts = new Choices();
-            string[] lines = File.ReadAllLines(Environment.CurrentDirectory + "\\command.txt");
+            string[] lines = File.ReadAllLines(Environment.CurrentDirectory + "\\voicecommand.txt");
             texts.Add(lines);
             Grammar listOfWords = new Grammar(new GrammarBuilder(texts));
             VoiceRecognition.LoadGrammar(listOfWords);
@@ -47,11 +47,27 @@ namespace Llenroc1
         private void VoiceRecognition_VoiceRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             questionBox.Text = e.Result.Text;
+            string voice = e.Result.Text;
+            switch (voice)
+            {
+                case "Hello":
+                    llenroc.Speak("Hello Cornell");
+                    break;
+                case "What is your name":
+                    llenroc.Speak("Llenroc");
+                    break;
+                case "What is my wife name":
+                    llenroc.Speak("Davilla Reddick");
+                    break;
+                case "What is my son name":
+                    llenroc.Speak("Cornell Reddick Junior");
+                    break;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
