@@ -24,6 +24,7 @@ namespace Llenroc1
          
         SpeechRecognitionEngine VoiceRecognition = new SpeechRecognitionEngine();
         SpeechSynthesizer llenroc = new SpeechSynthesizer();
+        DateTime dateTime = DateTime.Now.Date;
 
         public Llenroc()
         {
@@ -53,6 +54,12 @@ namespace Llenroc1
                 case "Hello":
                     llenroc.Speak("Hello Cornell");
                     break;
+                case "How are you doing today":
+                    llenroc.Speak("I'm doing fine");
+                    break;
+                case "Llenroc":
+                    llenroc.Speak("Hello Cornell");
+                    break;
                 case "What is your name":
                     llenroc.Speak("Llenroc");
                     break;
@@ -61,6 +68,9 @@ namespace Llenroc1
                     break;
                 case "What is my son name":
                     llenroc.Speak("Cornell Reddick Junior");
+                    break;
+                case "what is the date":
+                    llenroc.Speak("Today is Friday");
                     break;
             }
         }
