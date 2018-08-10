@@ -25,6 +25,8 @@ namespace Llenroc1
         SpeechRecognitionEngine VoiceRecognition = new SpeechRecognitionEngine();
         SpeechSynthesizer llenroc = new SpeechSynthesizer();
         DateTime dateTime = DateTime.Now.Date;
+        PromptBuilder pb = new PromptBuilder();
+        //TO DO: add a prompt feature to the applicaton
 
         public Llenroc()
         {
