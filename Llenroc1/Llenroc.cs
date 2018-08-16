@@ -68,13 +68,16 @@ namespace Llenroc1
                 case "What is my wife name":
                     llenroc.Speak("Davilla Reddick");
                     break;
+                    case "What is my daugter name":
+                    llenroc.Speak("Cornell Reddick Junior");
+                    break;
                 case "What is my son name":
                     llenroc.Speak("Cornell Reddick Junior");
                     break;
                 case "what is the date":
                     llenroc.Speak("Today is" + DateTime.Now);
                     break;
-                    case "what is my niece name";
+                case "what is my niece name":
                     llenroc.Speak("Allona Anderson");
                     break;
             }
