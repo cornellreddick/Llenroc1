@@ -72,7 +72,10 @@ namespace Llenroc1
                     llenroc.Speak("Cornell Reddick Junior");
                     break;
                 case "what is the date":
-                    llenroc.Speak("Today is Friday");
+                    llenroc.Speak("Today is" + DateTime.Now);
+                    break;
+                    case "what is my niece name";
+                    llenroc.Speak("Allona Anderson");
                     break;
             }
         }
